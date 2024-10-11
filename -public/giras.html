@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giras</title>
+    <!-- ICONO PESTAÑA -->
+    <link rel="shortcut icon" href="C:\Users\NZR\Documents\programacion 5\plataformaDisco\loba.jpg" type="image/x-icon">
+    <!-- VINCULACION TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- VINCULACION CSS -->
+    <link rel="stylesheet" href="giras.css">
+    <!-- FUENTE TITULOS SOLO MAYUSCULA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- FUENTE CONTENIDO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Headland+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <!-- FUENTE CONTENIDO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Headland+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+        <!-- ICONOS SIDE BAR -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- LIBRERIA SWEETALERT -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+    </head>
+
+<body>
+    <!-- GIRA -->
+    <div>
+        <h1 id="giras">Fechas de la giras</h1>
+        <br>
+        <!-- SALUDO PERSONALIZADO -->
+        <span id="welcome"></span><i class=" iconoTicket bi bi-ticket-detailed-fill"></i>
+        <br>
+        <!-- CONTENEDOR GIRAS -->
+        <ul class="flex flex-col items-center space-y-6 ">
+            <!--GIRA BUENOS AIRES-->
+            <li
+                class="p-4 w-[800px] bg-slate-300 border-2 border-slate-200 rounded-full flex flex-row justify-between items-center contenidoMusicPlayer">
+                <h1>01/11</h1>
+                <h1>Buenos Aires, Argentina.</h1>
+                <button class="tickets" onclick="getTickets('Buenos Aires, Argentina')">Tickets</button>
+              
+                
+            </li>
+            <!-- GIRA RIO DE JANEIRO -->
+            <li
+                class="p-4 w-[800px] bg-slate-300 border-2 border-slate-200 rounded-full flex flex-row justify-between items-center contenidoMusicPlayer ">
+                <h1>05/11</h1>
+                <h1>Rio de Janeiro, Brasil.</h1>
+                <button onclick="getTickets('Rio de Janeiro, Brasil')" class="tickets" >Tickets</button>
+            </li>
+            <!-- GIRA LA PAZ-->
+            <li
+                class="p-4 w-[800px] bg-slate-300 border-2 border-slate-200 rounded-full flex flex-row justify-between items-center contenidoMusicPlayer ">
+                <h1>08/11</h1>
+                <h1>La Paz, Bolivia.</h1>
+                <button onclick="getTickets('La Paz, Bolivia')" class="tickets" >Tickets</button>
+            </li>
+            <!-- GIRA SANTIAGO DE CHILE -->
+            <li
+                class="p-4 w-[800px] bg-slate-300 border-2 border-slate-200 rounded-full flex flex-row justify-between items-center contenidoMusicPlayer ">
+                <h1>11/11</h1>
+                <h1>Santiago de Chile, Chile. </h1>
+                <button onclick="getTickets('Santiago de Chile, Chile')" class="tickets" >Tickets</button>
+            </li>
+            <!-- GIRA BOGOTÁ -->
+            <li
+                class="p-4 w-[800px] bg-slate-300 border-2 border-slate-200 rounded-full flex flex-row justify-between items-center contenidoMusicPlayer ">
+                <h1>15/11</h1>
+                <h1>Bogotá, Colombia.</h1>
+                <button onclick="getTickets('Bogotá, Colombia')" class="tickets" >Tickets</button>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+
+    <script src="giras.js"></script>
+
+</body>
+
+<!-- MENSAJE OCULTO: SI ESTAS LEYENDO ESTO, ENTRASTE AL CODIGO FUENTE DE MI PRIMERA PAGINA WEB -en proceso- :) -->
+
+</html>

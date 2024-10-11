@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakira</title>
+    <!-- ICONO PESTAÑA -->
+    <link rel="shortcut icon" href="loba.jpg" type="image/x-icon">
+    <!-- VINCULACION TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- VINCULACION CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FUENTE TITULOS SOLO MAYUSCULA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- FUENTE CONTENIDO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Headland+One&family=Mukta:wght@200;300;400;500;600;700;800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <!-- ICONOS SIDE BAR -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div class="flex">
+        <!-- SIDE BAR -->
+        <div class="bg-gray-900 w-1/6">
+            <div class="fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900">
+                <div class="text-gray-100 text-xl">
+                    <!-- MENU -->
+                    <div class="p-2.5 mt-1 flex items-center">
+                        <i class="bi bi-list px-2 py-1 rounded-md"></i>
+                        <h1 class="text-[30px] font-bold ml-3" id="sideBar"> MENU </h1>
+                        <i class="bi bi-x-lg ml-20 cursor-pointer lg:hidden"></i>
+                    </div>
+
+                    <hr class=" my-2 text-gray-100">
+
+                    <!-- LUPITA "BUSCAR"-->
+                    <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-900">
+                        <i class="bi bi-search text-sm"></i>
+                        <input type="text" placeholder="Buscar" class="text-[15px] ml-4 w-full bg-transparent">
+                    </div>
+
+                    <!-- REGISTRATE -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <i class="bi bi-book"></i>
+                        <a class="menuDeOpciones" href="signUp.html" target="_blank">Registrate</a>
+                    </div>
+
+                    <!-- INICIA SESIÓN -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <a class="menuDeOpciones" href="login.html" target="_blank">Inicia Sesión</a>
+                    </div>
+
+                    <!-- AGREGA UN ALBUM -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <i class="bi bi-arrow-bar-up"></i>
+                        <a class="menuDeOpciones" href="addAlbum.html" target="_blank">Agregar un album </a>
+                    </div>
+
+                    <!-- AGREGA UNA CANCION -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <i class="bi bi-cloud-arrow-up"></i>
+                        <a class="menuDeOpciones" href="agregarCancion.html" target="_blank">Agregar una cancion </a>
+                    </div>
+
+                    <!-- EDITA UN ALBUM -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <i class="bi bi-pencil-square"></i>
+                        <a class="menuDeOpciones" href="editarAlbum.html" target="_blank">Editar un album </a>
+                    </div>
+
+                    <!-- GIRA -->
+                    <div
+                        class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 bg-gray-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-ticket-detailed" viewBox="0 0 16 16">
+                            <path
+                                d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2z" />
+                            <path
+                                d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6zM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5z" />
+                        </svg>
+                        <a class="menuDeOpciones" href="giras.html" target="_blank">Giras </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENIDO GENERAL -->
+        <!--Insertamos a la pagina web Titulos, Subtitulos y parrafos.-->
+        <div class="w-5/6">
+            <div class="flex flex-col items-center">
+                <h1 id="idh1">Shakira</h1>
+                <!-- HEADER -->
+                <div class="header">
+                    <p>Apodada como la <strong>"reina del pop latino"</strong> por su alto nivel de ventas, versatilidad
+                        vocal,
+                        éxito e influencia global. Considerada un icono de la música latina, desde su debut en los años
+                        90 hasta la
+                        actualidad ha tenido una gran repercusión en la escena musical, siendo citada en numerosas
+                        ocasiones por
+                        inspirar e influir a toda una generación de cantantes. Con una carrera artística de más de
+                        treinta años, es
+                        una de las artistas con mayores ventas discográficas en la historia, con más de <strong><em>125
+                                millones</em></strong> de discos y sencillos vendidos</p>
+                    <br>
+                    <center><img src="shakira.jpg" alt="Es una imagen de una chica con un disco de vinilo" width="350">
+                    </center>
+                </div>
+
+                <!-- TOP CANCIONES MÁS ESCUCHADAS -->
+                <hr>
+                <h2 id="tituloAlbums">Canciones más escuchadas, según la IA:</h2>
+                <div class="topcanciones">
+                    <ol>
+                        <li><a href="https://youtu.be/DUT5rEU6pqM?si=O52DGeMe0R8WD2sr" target="_blank"><em>Hips Don't
+                                    Lie</em></a>
+                        </li>
+                        <li><a href="https://youtu.be/weRHyjj34ZE?si=XCuBQiNI0qe72X8q" target="_blank"><em>Whenever,
+                                    Wherever</em></a></li>
+                        <li> <a href="https://youtu.be/Dsp_8Lm1eSk?si=tm6ho82pHPw1eXHB" target="_blank"><em>La
+                                    tortura</em></a>
+                        </li>
+                        <li><a href="https://youtu.be/dzsuE5ugxf4?si=S8wLwrz5YM7ZnrWU" target="_blank"><em>Waka
+                                    Waka</em></a>
+                        </li>
+                        <li><a href="https://youtu.be/6Mgqbai3fKo?si=2inbHOgEVsRL-wgX"
+                                target="_blank"><em>Chantaje</em></a>
+                        </li>
+                    </ol>
+                    <p>Si te gustaría conocer más acerca de esta super estrella, te invitamos a visualizar su <a
+                            href="https://es.wikipedia.org/wiki/Shakira#Biograf%C3%ADa" target="_blank"> biografía
+                            completa
+                            aqui </a> </p>
+                </div>
+                <hr>
+
+
+                <!-- ALBUMS -->
+                <div class="albums">
+                    <h2 id="tituloAlbums">Albums</h2>
+                    <div class="containerAlbums">
+                        <!-- ALBUM SALE EL SOL -->
+                        <div class="relative albumSaleElSol2">
+                            <br>
+                            <button class="botonFavorito absolute top-2 right-2 "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                              </svg>
+                            </button>
+                            <img src="albumSaleElSol.jpg" alt="Portada Album Sale el sol">
+                            <br>
+                            <h3>Sale el Sol</h3>
+                            <br>
+                            <div>
+                                <button class="botonConoceMas"><a href="albumSaleElSol.html" target="_blank">Conoce
+                                        más</a></button>
+                                <button class="botonEditarAlbum">Editar</button>
+                                <button class="botonBasura"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <!-- ALBUM PIES DESCALZOS -->
+                        <div class="relative albumPiesDescalzos">
+                            <br>
+                            <button class="botonFavorito absolute top-2 right-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                              </svg>
+                            </button>
+                            <img src="albumPiesDescalzos.jpg" alt="Portada Album Pies Descalzos">
+                            <br>
+                            <h3>Pies Descalzos</h3>
+                            <br>
+                            <div>
+                                <button class="botonConoceMas"><a href="albumPiesDescalzos.html" target="_blank">Conoce
+                                        más</a></button>
+                                <button class="botonEditarAlbum">Editar</button>
+                                <button class="botonBasura"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <!-- ALBUM DONDE ESTAN LOS LADRONES-->
+                        <div class="relative albumDondeEstanLosLadrones">
+                            <br>
+                            <button class="botonFavorito absolute top-2 right-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                              </svg>
+                            </button>
+                            <img src="albumDondeEstanLosLadrones.jpg" alt="Portada Album ¿Donde estan los ladrones?">
+                            <br>
+                            <h3>¿Donde están los ladrones?</h3>
+                            <br>
+                            <div>
+                                <button class="botonConoceMas"><a href="albumDondeEstanLosLadrones.html"
+                                        target="_blank">Conoce más</a></button>
+                                <button class="botonEditarAlbum">Editar</button>
+                                <button class="botonBasura"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5" />
+                                    </svg></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <button class="botonCanalDeYoutube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg> <a href="https://www.youtube.com/@Shakira" target="_blank">Canal de youtube aquí</a></button>
+                <br>
+                <br>
+            </div>
+
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+<!-- MENSAJE OCULTO: SI ESTAS LEYENDO ESTO, ENTRASTE AL CODIGO FUENTE DE MI PRIMERA PAGINA WEB -en proceso- :) -->
+
+</html>

@@ -1,0 +1,34 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1501619757722-90657a99803b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+    text-align: center;
+    background-size: 100%;
+}
+h3{
+    color: white;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+form{
+    color: orange;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-size:cover;
+    border: 1px solid rgb(158, 158, 236);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+input{
+background-color: rgba(207, 209, 211, 0.808);
+}
+.submit{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.checkbox{
+color: white;
+font-family: Verdana;
+font-size: small;
+}

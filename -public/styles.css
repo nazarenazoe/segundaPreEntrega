@@ -1,0 +1,166 @@
+/* ESTILO BODY */
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/02/15/42/sunrise-7493833_1280.jpg);
+    background-size: contain;
+}
+
+/* ESTILO SIDEBAR "MENU" */
+#sideBar {
+    font-size: 30px;
+    color: rgba(249, 251, 253, 0.801);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+ /* ESTILO SIDEBAR OPCIONES: LOG IN, REGISTRO, AGREGAR CANCIONES, ETC */
+.menuDeOpciones {
+    margin: 50px;
+    font-size: 20px;
+    color: rgba(249, 251, 253, 0.801);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* TITULO "SHAKIRA" */
+#idh1 {
+    color: rgba(249, 251, 253, 0.801);
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 90px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ESTILO DEL HEADER */
+.header {
+    background-color: rgba(189, 189, 189, 0.7);
+    padding: 30px 60px 30px 60px;
+    border: 5px solid rgba(94, 82, 82, 0.658);
+    border-radius: 20px;
+    width: 700px;
+    height: 600px;
+    margin: 60px auto;
+    text-align: center;
+    color: black;
+    /* FONT DEL HEADER */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+/* ESTILO DE TOP CANCIONES */
+.topcanciones {
+    background-color: rgba(189, 189, 189, 0.7);
+    padding: 20px 60px 30px 60px;
+    border: 2px solid rgba(249, 251, 253, 0.801);
+    border-radius: 10px;
+    width: 700px;
+    height: 200px;
+    margin: 60px auto;
+    text-align: center;
+    color: black;
+    /* FONT DEL TOP MEJORES CANCIONES */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+/* ESTILO TIULO "ALBUMS"  */
+#tituloAlbums {
+    color: rgba(249, 251, 253, 0.801);
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* FLEXBOX CONTAINER ALBUMS */
+.containerAlbums{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+/* ESTILO RECUADROS ALBUMS */
+.albumSaleElSol2, .albumPiesDescalzos, .albumDondeEstanLosLadrones{
+    background-color: rgba(249, 251, 253, 0.801);
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    width: 250px;
+}
+
+/* BOTONES RECUADRO ALBUMS: CONOCER MAS, EDITAR ALBUM, BASURA. */
+.botonConoceMas, .botonEditarAlbum, .botonBasura{
+        min-width: 20px;
+        position: relative;
+        padding: 9px 9px;
+        border: 0;
+        border-radius: 8px;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        background: radial-gradient(
+          ellipse at bottom,
+          rgba(71, 81, 92, 1) 0%,
+          rgba(11, 21, 30, 1) 45%
+        );
+        color: rgb(255, 255, 255, 0.66);
+}
+
+/* ESTILO BOTON CANAL DE YOUTUBE AQUI */
+.botonCanalDeYoutube{
+    background: white;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255 0 0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255 0 0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+}
+
+/* a {
+    color: white;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+/* ESTILO PARA EL TAG A, PERO CON ID -mas especifico-. */
+#a{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: white;
+}
+
+/* ESTILO PARA EL BOTON ESTRELLA FAVORITO CUANDO LE DAN CLIC */
+.favorito-seleccionado {
+    color: red;
+}
+  

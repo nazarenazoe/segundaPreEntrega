@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agregarCancion</title>
+    <!-- VINCULACION CSS -->
+    <link rel="stylesheet" href="addAlbum.css">
+    <meta name="descripcion" content="Este es un proyecto de Shakira">
+    <!-- LIBRERIA SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!-- AGREGAR CANCIONES -->
+    <h3>Agregar Cancion</h3>
+    <form action="" method=" get">
+    <label for="TituloCancion">Titulo de la cancion</label>
+    <input type="text" id="TituloCancion" name="TituloCancion" placeholder="Ingrese el nombre de la cancion">
+    <br>
+    <br>
+
+    <label for="duracionCancion">Duracion de la cancion</label>
+    <input type="text" id="duracionCancion" name="duracionCancion" placeholder="Ingrese en formato MM:SS">
+    <br>
+    <br>
+
+    <label for="enlaceUrl">Ingrese el enlace de Youtube</label>
+    <input id="enlaceUrl" type="url" name="enlaceUrl" placeholder="Ingrese el link de Youtube" required>
+    <br>
+    <br>
+
+    <input type="submit" value="Agregar" class="submit">
+    <button type="button" class="submit" id="cancelButton">Cancelar</button>
+    </form>
+    <script src="agregarCancion.js"></script>
+    </body>
+
+</html>

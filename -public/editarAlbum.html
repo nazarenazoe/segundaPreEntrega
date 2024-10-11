@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditarAlbum</title>
+    <!-- VINCULACION CSS -->
+    <link rel="stylesheet" href="addAlbum.css">
+    <meta name="descripcion" content="Este es un proyecto de Shakira">
+    <!-- LIBRERIA SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <h3>Editar Album</h3>
+    <form action="" method=" get">
+    <label for="TituloAlbum">Titulo del Album</label>
+    <input type="text" id="TituloAlbum" name="TituloAlbum" placeholder="Ingrese el nombre del album" required>
+    <br>
+    <br>
+    <label for="descripcion" required >Descripcion del album</label>
+    <br>
+    <br>
+    <textarea name="descripcion" id="descripcion" rows="10px" cols="25px"></textarea>
+    <br>
+    <br>
+
+    <label for="imagenUrl" required>Ingrese el URL de la imagen del album</label>
+    <input id="imagenUrl" type="url" name="imagenUrl" placeholder="Ingresa la URL de tu imagen" required>
+    <br>
+    <br>
+
+    <input type="submit" value="Editar" class="submit">
+    <!-- <input type="submit" value="Cancelar" class="submit"> -->
+    <button type="button" class="submit" id="cancelButton">Cancelar</button>
+    </form>
+    <script src="editarAlbum.js"></script>
+    </body>
+
+</html>

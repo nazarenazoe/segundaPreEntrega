@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- LIBRERIA SWEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+</head>
+
+<body> <!-- ACCESO/INICIO DE SESION -->
+    <h3>Login</h3>
+    <form action="" method="get">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="correoElectronico" placeholder="Ingrese su email">
+        <br>
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="contraseña" placeholder="Ingrese su contraseña">
+        <span id="passwordError"
+            style="color: white; display: none; font-size: 13px; font-family: Oswald,sans-serif; font-optical-sizing: auto; font-weight: <weight>; font-style: normal;">
+                Tu contraseña es demasiado corta <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+                  </svg></span>
+        <br>
+        <br>
+        <input type="submit" value="Acceder" class="submit">
+    </form>
+    <div>
+        <p>¿Aún no sos miembro?</p>
+        <a href="signUp.html" target="_"> Registrate </a>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

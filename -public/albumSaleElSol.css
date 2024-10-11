@@ -1,0 +1,52 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1501619757722-90657a99803b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+    text-align: center;
+    background-size: 100%;
+}
+
+
+/* TITULO "SALE EL SOL" */
+#tituloSaleElSol {
+    color: rgba(249, 251, 253, 0.801);
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ESTILO PARRAFOS */
+p{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+}
+
+/* ESTILO TITULO "CANCIONES" */
+#tituloCanciones{
+    color: rgba(249, 251, 253, 0.801);
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* ESTILO CONTENIDO MUSIC PLAYER */
+.contenidoMusicPlayer
+{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: black;
+    font-size: 18px;
+  }
+
+
