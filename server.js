@@ -20,7 +20,10 @@ const user = require("./models/user.js")
 
 
 
-
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en puerto ${PORT} y BD conectada`);
+});
 
 //EL ORGANIZADOR DE LA DATA
 app.use(express.json())
