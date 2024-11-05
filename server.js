@@ -1,13 +1,26 @@
 // MI SERVIDOR
 //LLAMAR A EXPRESS (DEPENDENCIA)
 const express = require('express')
+//LLAMAR A MONGOOSE
 const mongoose = require("mongoose")
+const url = "mongodb+srv://nazarelazoe:QStqgalayKHym7dJ@clasemongo.grcos.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo"
+
+//LLAMAR A LIBERIA DOTENV
+const dotenv = require ("dotenv").config()
+console.log(process.env.DATABASE_URL)
+
+const app = express()
+
+const port = process.env.PORT
+const password = process.env.PASSWORD
+
 const router = require("./routes/index.js")
 const album = require("./models/album.js")
 const user = require("./models/user.js") 
-const url = "mongodb+srv://nazarelazoe:QStqgalayKHym7dJ@clasemongo.grcos.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo"
 
-const app = express()
+
+
+
 
 //EL ORGANIZADOR DE LA DATA
 app.use(express.json())
