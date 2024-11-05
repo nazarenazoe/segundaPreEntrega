@@ -11,7 +11,7 @@ console.log(process.env.DATABASE_URL)
 
 const app = express()
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000;
 const password = process.env.PASSWORD
 
 const router = require("./routes/index.js")
@@ -20,10 +20,6 @@ const user = require("./models/user.js")
 
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor escuchando en puerto ${PORT} y BD conectada`);
-});
 
 //EL ORGANIZADOR DE LA DATA
 app.use(express.json())
@@ -36,7 +32,7 @@ const connectToMongo = async () => {
         await mongoose.connect(url)
 
         //FUNCION PARA LEVANTAR NUESTRO SERVIDOR: PARAMS (PUERTO, F(x)) //Los metodos los llamamos como los definio express en su documento
-        app.listen(3000, () => {
+        app.listen(port, () => {
             console.log("Servidor escuchando en puerto 3000 y BD conectada");
         });
     }catch (error){
@@ -47,5 +43,9 @@ const connectToMongo = async () => {
 connectToMongo()
 
 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en puerto ${PORT} y BD conectada`);
+});
 
 
