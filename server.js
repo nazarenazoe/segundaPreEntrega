@@ -3,8 +3,8 @@
 const express = require('express')
 const mongoose = require("mongoose")
 const router = require("./routes/index.js")
-const albums = require("./models/album.js")
-const users = require("./models/user.js") 
+const album = require("./models/album.js")
+const user = require("./models/user.js") 
 const url = "mongodb+srv://nazarelazoe:QStqgalayKHym7dJ@clasemongo.grcos.mongodb.net/?retryWrites=true&w=majority&appName=ClaseMongo"
 
 const app = express()

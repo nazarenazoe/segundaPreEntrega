@@ -43,7 +43,7 @@ portada: {
 });
 
 // Exportar el modelo
-module.exports = mongoose.model('albums', albums);
+module.exports = mongoose.model('albums', album);
 
 
 

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose ");
+const mongoose = require("mongoose");
 
 /* PROPIEDADES QUE DEBE TENER
 1. Nombre
