@@ -7,8 +7,8 @@ const descripcionInput = document.getElementById('descripcion');
 const imagenUrlInput = document.getElementById('imagenUrl');
 
 
-// Cuando el usuario aprete "Editar"
-form.addEventListener('submit', function(event) {
+// Cuando el usuario aprete "Agregar"
+form.addEventListener('submit', function (event) {
     event.preventDefault(); // No hacemos que se envie el formulario
 
     // Capturamos el valor de Titulo Album, Descripcion y URL
@@ -28,4 +28,29 @@ form.addEventListener('submit', function(event) {
         form.submit(); // Enviamos el formulario
     });
 });
- 
+
+// GUARDA LOS VALORES DEL FORMULARIO
+async function crearAlbums() {
+    try {
+        /*  var titulo = document.querySelector('#TituloAlbum') 
+         var año = document.querySelector('#año') 
+         var descripcion = document.querySelector('#descripcion') 
+         var imagenUrl = document.querySelector('#imagenUrl') */
+
+        const response = await axios.post('http://localhost:5000/discos/discos', {
+            titulo: TituloAlbumInput.value,
+            año: añoInput.value,
+            descripcion: descripcionInput.value,
+            imagenUrl: imagenUrlInput.value
+        });
+        return response;
+        /* document.getElementById("form").reset(); */
+
+
+    } catch (error) {
+        console.error("Error en la solicitud de crear álbum:", error);
+        throw error;
+    }
+}
+
+document.querySelector('.agregar').addEventListener('click', crearAlbums)
