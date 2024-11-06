@@ -37,7 +37,7 @@ async function crearAlbums() {
          var descripcion = document.querySelector('#descripcion') 
          var imagenUrl = document.querySelector('#imagenUrl') */
 
-        const response = await axios.post('http://localhost:5000/discos/discos', {
+        const response = await axios.post('http://localhost:3000/discos/discos', {
             titulo: TituloAlbumInput.value,
             año: añoInput.value,
             descripcion: descripcionInput.value,
@@ -54,3 +54,22 @@ async function crearAlbums() {
 }
 
 document.querySelector('.agregar').addEventListener('click', crearAlbums)
+
+//CREAR UN NUEVO ALBUM
+
+document.getElementById()
+
+
+//ELIMINAR UN ALBUM 
+async function deleteAlbum(id){
+    if (confirm('¿Seguro que eliminas este album?')){
+        try {
+            await axios.delete('http://localhost:3000/discos/discos/${id}');
+            alert('Album eliminado');
+            loadAlbums(); 
+        } catch (error){
+            console.error("Error al eliminar", error);
+            alert('Error al eliminar');
+        }
+    }
+}
